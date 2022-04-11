@@ -2,6 +2,6 @@
 
 ## Marque um X se esta vendo isso no repositório👍🏽
 - [x] Beatriz
-- [ ] Julia
+- [x] Julia
 - [ ] Raquel
 - [ ] Gabrielly
