@@ -3,6 +3,6 @@
 ## Se você esta vendo marque um X 👍🏽!
 
 - [ ] Raquel
-- [ ] Beatriz
+- [X] Beatriz
 - [ ] Julia
 - [ ] Gabrielly
