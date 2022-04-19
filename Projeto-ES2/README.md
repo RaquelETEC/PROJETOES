@@ -1,7 +1,7 @@
-# Teste
+# Projeto de engenharia de software 2
 
-## Marque um X se esta vendo isso no repositório👍🏽
-- [x] Beatriz
-- [x] Julia
-- [x] Raquel
-- [ ] Gabrielly
+## Participantes:
+👉🏽 Raquel 
+👉🏽 Julia
+👉🏽 Beatriz
+👉🏽Gabrielly
