@@ -33,6 +33,7 @@
             System.Windows.Forms.Label sENHALabel;
             System.Windows.Forms.Label fUNCAOLabel;
             System.Windows.Forms.Label bLOQUEADOLabel;
+            System.Windows.Forms.Label iD_USUARIOLabel;
             this.sistemaDataSet = new sistemaclube.sistemaDataSet();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usuarioTableAdapter = new sistemaclube.sistemaDataSetTableAdapters.usuarioTableAdapter();
@@ -56,10 +57,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.iD_USUARIOTextBox = new System.Windows.Forms.TextBox();
             lOGINLabel = new System.Windows.Forms.Label();
             sENHALabel = new System.Windows.Forms.Label();
             fUNCAOLabel = new System.Windows.Forms.Label();
             bLOQUEADOLabel = new System.Windows.Forms.Label();
+            iD_USUARIOLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioDataGridView)).BeginInit();
@@ -364,12 +367,31 @@
             this.label4.TabIndex = 65;
             this.label4.Text = "*";
             // 
+            // iD_USUARIOLabel
+            // 
+            iD_USUARIOLabel.AutoSize = true;
+            iD_USUARIOLabel.Location = new System.Drawing.Point(470, 160);
+            iD_USUARIOLabel.Name = "iD_USUARIOLabel";
+            iD_USUARIOLabel.Size = new System.Drawing.Size(73, 13);
+            iD_USUARIOLabel.TabIndex = 65;
+            iD_USUARIOLabel.Text = "ID USUARIO:";
+            // 
+            // iD_USUARIOTextBox
+            // 
+            this.iD_USUARIOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "ID_USUARIO", true));
+            this.iD_USUARIOTextBox.Location = new System.Drawing.Point(549, 157);
+            this.iD_USUARIOTextBox.Name = "iD_USUARIOTextBox";
+            this.iD_USUARIOTextBox.Size = new System.Drawing.Size(100, 20);
+            this.iD_USUARIOTextBox.TabIndex = 66;
+            // 
             // frusuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
-            this.ClientSize = new System.Drawing.Size(1357, 647);
+            this.ClientSize = new System.Drawing.Size(1365, 655);
+            this.Controls.Add(iD_USUARIOLabel);
+            this.Controls.Add(this.iD_USUARIOTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -426,5 +448,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox iD_USUARIOTextBox;
     }
 }
