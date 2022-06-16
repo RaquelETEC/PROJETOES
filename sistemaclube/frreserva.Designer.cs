@@ -43,6 +43,7 @@
             System.Windows.Forms.Label tIPO_RESERVALabel;
             System.Windows.Forms.Label hORA_INICIOLabel1;
             System.Windows.Forms.Label hORA_FIMLabel;
+            System.Windows.Forms.Label iD_RESERVALabel;
             this.sistemaDataSet = new sistemaclube.sistemaDataSet();
             this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reservaTableAdapter = new sistemaclube.sistemaDataSetTableAdapters.reservaTableAdapter();
@@ -97,6 +98,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.iD_RESERVATextBox = new System.Windows.Forms.TextBox();
             nOME_CLIENTELabel = new System.Windows.Forms.Label();
             cPF_CLIENTELabel = new System.Windows.Forms.Label();
             tELEFONE_CLIENTELabel = new System.Windows.Forms.Label();
@@ -111,6 +113,7 @@
             tIPO_RESERVALabel = new System.Windows.Forms.Label();
             hORA_INICIOLabel1 = new System.Windows.Forms.Label();
             hORA_FIMLabel = new System.Windows.Forms.Label();
+            iD_RESERVALabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cad_quadraBindingSource1)).BeginInit();
@@ -862,12 +865,34 @@
             this.label11.TabIndex = 60;
             this.label11.Text = "*";
             // 
+            // iD_RESERVALabel
+            // 
+            iD_RESERVALabel.AutoSize = true;
+            iD_RESERVALabel.BackColor = System.Drawing.Color.Transparent;
+            iD_RESERVALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            iD_RESERVALabel.ForeColor = System.Drawing.Color.White;
+            iD_RESERVALabel.Location = new System.Drawing.Point(905, 135);
+            iD_RESERVALabel.Name = "iD_RESERVALabel";
+            iD_RESERVALabel.Size = new System.Drawing.Size(82, 15);
+            iD_RESERVALabel.TabIndex = 60;
+            iD_RESERVALabel.Text = "ID RESERVA:";
+            // 
+            // iD_RESERVATextBox
+            // 
+            this.iD_RESERVATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "ID_RESERVA", true));
+            this.iD_RESERVATextBox.Location = new System.Drawing.Point(986, 132);
+            this.iD_RESERVATextBox.Name = "iD_RESERVATextBox";
+            this.iD_RESERVATextBox.Size = new System.Drawing.Size(100, 20);
+            this.iD_RESERVATextBox.TabIndex = 61;
+            // 
             // frreserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
-            this.ClientSize = new System.Drawing.Size(1353, 703);
+            this.ClientSize = new System.Drawing.Size(1361, 703);
+            this.Controls.Add(iD_RESERVALabel);
+            this.Controls.Add(this.iD_RESERVATextBox);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label10);
@@ -985,5 +1010,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox iD_RESERVATextBox;
     }
 }

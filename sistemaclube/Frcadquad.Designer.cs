@@ -36,6 +36,7 @@
             System.Windows.Forms.Label bLOQUEADOLabel;
             System.Windows.Forms.Label data_cadLabel;
             System.Windows.Forms.Label nUM_QUADRALabel;
+            System.Windows.Forms.Label iD_QUADRALabel;
             this.cad_quadraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sistemaDataSet = new sistemaclube.sistemaDataSet();
             this.nUM_QUADRATextBox = new System.Windows.Forms.TextBox();
@@ -68,6 +69,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.iD_QUADRATextBox = new System.Windows.Forms.TextBox();
             nOME_QUADRALabel = new System.Windows.Forms.Label();
             cOBERTALabel = new System.Windows.Forms.Label();
             aRQUIBANCADALabel = new System.Windows.Forms.Label();
@@ -75,6 +77,7 @@
             bLOQUEADOLabel = new System.Windows.Forms.Label();
             data_cadLabel = new System.Windows.Forms.Label();
             nUM_QUADRALabel = new System.Windows.Forms.Label();
+            iD_QUADRALabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cad_quadraBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cad_quadraDataGridView)).BeginInit();
@@ -157,6 +160,19 @@
             data_cadLabel.Size = new System.Drawing.Size(115, 15);
             data_cadLabel.TabIndex = 17;
             data_cadLabel.Text = "Data de cadastro:";
+            // 
+            // nUM_QUADRALabel
+            // 
+            nUM_QUADRALabel.AutoSize = true;
+            nUM_QUADRALabel.BackColor = System.Drawing.Color.Transparent;
+            nUM_QUADRALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            nUM_QUADRALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nUM_QUADRALabel.ForeColor = System.Drawing.Color.White;
+            nUM_QUADRALabel.Location = new System.Drawing.Point(55, 21);
+            nUM_QUADRALabel.Name = "nUM_QUADRALabel";
+            nUM_QUADRALabel.Size = new System.Drawing.Size(74, 15);
+            nUM_QUADRALabel.TabIndex = 5;
+            nUM_QUADRALabel.Text = "N° quadra:";
             // 
             // cad_quadraBindingSource
             // 
@@ -429,19 +445,6 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "*";
             // 
-            // nUM_QUADRALabel
-            // 
-            nUM_QUADRALabel.AutoSize = true;
-            nUM_QUADRALabel.BackColor = System.Drawing.Color.Transparent;
-            nUM_QUADRALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            nUM_QUADRALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nUM_QUADRALabel.ForeColor = System.Drawing.Color.White;
-            nUM_QUADRALabel.Location = new System.Drawing.Point(55, 21);
-            nUM_QUADRALabel.Name = "nUM_QUADRALabel";
-            nUM_QUADRALabel.Size = new System.Drawing.Size(74, 15);
-            nUM_QUADRALabel.TabIndex = 5;
-            nUM_QUADRALabel.Text = "N° quadra:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -508,12 +511,37 @@
             this.label7.TabIndex = 31;
             this.label7.Text = "*";
             // 
+            // iD_QUADRALabel
+            // 
+            iD_QUADRALabel.AutoSize = true;
+            iD_QUADRALabel.BackColor = System.Drawing.Color.Transparent;
+            iD_QUADRALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            iD_QUADRALabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            iD_QUADRALabel.Location = new System.Drawing.Point(781, 126);
+            iD_QUADRALabel.Name = "iD_QUADRALabel";
+            iD_QUADRALabel.Size = new System.Drawing.Size(82, 15);
+            iD_QUADRALabel.TabIndex = 31;
+            iD_QUADRALabel.Text = "ID QUADRA:";
+            // 
+            // iD_QUADRATextBox
+            // 
+            this.iD_QUADRATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cad_quadraBindingSource, "ID_QUADRA", true));
+            this.iD_QUADRATextBox.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iD_QUADRATextBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iD_QUADRATextBox.Location = new System.Drawing.Point(869, 123);
+            this.iD_QUADRATextBox.Name = "iD_QUADRATextBox";
+            this.iD_QUADRATextBox.Size = new System.Drawing.Size(100, 23);
+            this.iD_QUADRATextBox.TabIndex = 32;
+            // 
             // Frcadquad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
-            this.ClientSize = new System.Drawing.Size(1366, 719);
+            this.ClientSize = new System.Drawing.Size(1370, 736);
+            this.Controls.Add(iD_QUADRALabel);
+            this.Controls.Add(this.iD_QUADRATextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -589,5 +617,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox iD_QUADRATextBox;
     }
 }

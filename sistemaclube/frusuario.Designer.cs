@@ -370,16 +370,19 @@
             // iD_USUARIOLabel
             // 
             iD_USUARIOLabel.AutoSize = true;
+            iD_USUARIOLabel.BackColor = System.Drawing.Color.Transparent;
+            iD_USUARIOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            iD_USUARIOLabel.ForeColor = System.Drawing.Color.White;
             iD_USUARIOLabel.Location = new System.Drawing.Point(470, 160);
             iD_USUARIOLabel.Name = "iD_USUARIOLabel";
-            iD_USUARIOLabel.Size = new System.Drawing.Size(73, 13);
+            iD_USUARIOLabel.Size = new System.Drawing.Size(84, 15);
             iD_USUARIOLabel.TabIndex = 65;
             iD_USUARIOLabel.Text = "ID USUARIO:";
             // 
             // iD_USUARIOTextBox
             // 
             this.iD_USUARIOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "ID_USUARIO", true));
-            this.iD_USUARIOTextBox.Location = new System.Drawing.Point(549, 157);
+            this.iD_USUARIOTextBox.Location = new System.Drawing.Point(560, 157);
             this.iD_USUARIOTextBox.Name = "iD_USUARIOTextBox";
             this.iD_USUARIOTextBox.Size = new System.Drawing.Size(100, 20);
             this.iD_USUARIOTextBox.TabIndex = 66;
